@@ -5,9 +5,14 @@
 
 {{ define "content" }}
     {{ partial "page-single/content.html" . }}
+
+    <h2>Comments</h2>
+    {{ partial "disqus" . }}
 {{ end }}
+
+
 
 {{ define "footer" }}
     {{ partial "page-single/footer.html" . }}
-    {{ partial "page-single/variables-deinit.html" . }}
+    {{ partial "page-single/variables-deinit.html" . }}   
 {{ end }}
